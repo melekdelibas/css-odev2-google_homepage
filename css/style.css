@@ -6,14 +6,18 @@
   font-family: arial,sans-serif;
   font-size: 13px;
 }
+   /* üst alan sağa çekildi */
+.header li {
+  float: right;
+}
 
 .headerli a {
   display: block;
   color: black;
   text-align: center;
-  padding: 8px;  /* üst alan ara boşlukları 8px yapıldı */
+  padding: 5px;  /* üst alan ara boşlukları 8px yapıldı */
   text-decoration: none;
-  float: right; /* üst alan sağa çekildi */
+
 }
 
 /* profil pic border radius ve color eklendi */
@@ -24,10 +28,29 @@
 #profilpic:hover {
   border: 3px solid rgba(20, 20, 20, 0.120);
 }
-#appslogo {
-width: 16px; 
-height: 16px; 
-margin-right: 3px;
+/** applogo **/
+#applogo{
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+
+}
+#applogo img{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 16px; 
+  height: 16px; 
+}
+#applogo:hover {
+  background-color: rgba(20, 20, 20, 0.120);
+  border: 5px solid rgba(20, 20, 20, 0.030);
+  border-radius: 50%; 
 }
 
 
@@ -76,9 +99,8 @@ box-shadow:  0px 1px 4px 2px rgba(0, 0, 0, 0.090);; /* shadow ayarı yapıldı *
 .voice-logo {     /* mikrofon ikonu eklendi */
   align-items: right;
   padding-right: 13px;
+  padding-top: 12px;
   cursor: pointer;
-  padding-top: 5px;
-
 }
 
 .search-img span {
